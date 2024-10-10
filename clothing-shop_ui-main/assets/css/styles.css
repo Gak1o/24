@@ -813,3 +813,59 @@ body.dark-theme {
     zoom: 2.3;
   }
 }
+
+.products__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the price and button */
+  margin-top: 10px;
+}
+
+.products__price {
+  margin-bottom: 10px; /* Add some space between the price and button */
+}
+
+.button__link.add-to-cart {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(42, 42, 82); /* Your desired button color */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button__link.add-to-cart i {
+  margin-left: 8px;
+}
+
+.button__link.add-to-cart:hover {
+  background-color: darkblue;
+}
+
+.products__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.products__price {
+  margin-bottom: 10px;
+}
+
+.button__link.add-to-cart {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(27, 27, 64); /* Same button style */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px; /* Space between price and button */
+}
+
+.button__link.add-to-cart i {
+  margin-left: 5px;
+}

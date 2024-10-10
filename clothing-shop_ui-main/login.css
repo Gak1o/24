@@ -93,7 +93,7 @@ body {
   background: -webkit-linear-gradient(right, #0a0a0a, #252625);
   background: -moz-linear-gradient(right, #060606, #c8cdc6);
   background: -o-linear-gradient(right, #070707, #323432);
-  background: linear-gradient(to left, #dcdedb, #8DC26F);
+  background: linear-gradient(to left, #dcdedb, #232143);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      

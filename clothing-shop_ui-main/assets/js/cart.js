@@ -27,6 +27,24 @@ function displayCartItems() {
         displayCartItems();
       });
     });
+     // Display total cost
+  const totalCostElement = document.getElementById('total-cost');
+  totalCostElement.innerText = calculateTotal();
   }
 
   displayCartItems();
+
+  // Calculate total cost
+function calculateTotal() {
+    let total = 0;
+    cart.forEach((product) => {
+      const priceString = product.price.replace('Ksh ', '').replace(',', ''); // Remove "Ksh" prefix and comma
+      const price = parseFloat(priceString);
+      if (isNaN(price)) {
+        console.error(`Invalid price string: Ksh{priceString}`);
+        return NaN; // Return NaN if price string is invalid
+      }
+      total += price;
+    });
+    return total.toFixed(2);
+  }
